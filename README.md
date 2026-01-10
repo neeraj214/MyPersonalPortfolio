@@ -1,27 +1,51 @@
-# MyPersonalPortfolio  
-Hello everyone!  
-I’m Neeraj Negi. This is my personal portfolio website project showcasing my work, tech stack, and contact information.  
+# ✨ MyPersonalPortfolio
 
-**Profiles:**  
-- LinkedIn: https://www.linkedin.com/in/neerajnegi108/  
-- GitHub: https://github.com/neeraj214  
-- Kaggle: https://www.kaggle.com/negi108333  
-  
-**Contact:**  
-- Email: neerajnegi@gmail.com  
+[![Stars](https://img.shields.io/github/stars/neeraj214/MyPersonalPortfolio?style=social)](https://github.com/neeraj214/MyPersonalPortfolio/stargazers)
+[![Forks](https://img.shields.io/github/forks/neeraj214/MyPersonalPortfolio?style=social)](https://github.com/neeraj214/MyPersonalPortfolio/forks)
+[![Issues](https://img.shields.io/github/issues/neeraj214/MyPersonalPortfolio)](https://github.com/neeraj214/MyPersonalPortfolio/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/neeraj214/MyPersonalPortfolio)](https://github.com/neeraj214/MyPersonalPortfolio/commits/main)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/neeraj214/MyPersonalPortfolio/pulls)
+[![Built with React](https://img.shields.io/badge/Built%20with-React-61DAFB?logo=react&logoColor=white)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Build-Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
+[![TailwindCSS](https://img.shields.io/badge/Style-TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 
-**Tech Stack used:**  
-- ReactJS  
-- Tailwind CSS  
-- AOS  
-- Firebase  
-- Framer Motion  
-- Lucide  
-- Material UI  
-- SweetAlert2  
+I’m Neeraj Negi. This is my personal portfolio website, featuring my projects, tech stack, and ways to connect. It’s responsive, animated, and optimized for a clean developer experience.
 
-**Repository Link:**  
-[https://github.com/neeraj214/MyPersonalPortfolio](https://github.com/neeraj214/MyPersonalPortfolio)  
+**Profiles**
+- LinkedIn: https://www.linkedin.com/in/neerajnegi108/
+- GitHub: https://github.com/neeraj214
+- Kaggle: https://www.kaggle.com/negi108333
+
+**Contact**
+- Email: neerajnegi@gmail.com
+
+**Tech Stack**
+- React (UI)
+- Vite (Build tool)
+- Tailwind CSS (Styling)
+- AOS (Scroll animations)
+- Framer Motion (Micro animations)
+- Firebase (Comments/data, optional)
+- Material UI (Components)
+- Lucide Icons
+- SweetAlert2 (Alerts)
+
+**Repository**
+[https://github.com/neeraj214/MyPersonalPortfolio](https://github.com/neeraj214/MyPersonalPortfolio)
+
+---
+
+## 🚀 Features
+- Modern, responsive UI with Tailwind CSS
+- Animated hero and transitions (AOS + Framer Motion)
+- Project showcase cards and details
+- Contact form (FormSubmit) with elegant alerts
+- Social links (LinkedIn, GitHub, Kaggle)
+- Firebase integration ready for comments or data storage
+
+---
+
+## 📦 Installation
 
 We would appreciate it if you decide to use this project. Please include credit when using it. Thank you! 🙏  
 
@@ -40,13 +64,13 @@ Ensure that you have already installed:
 
 ## Steps to Run the Project  
 
-1. **Download this project:**  
+1. **Download this project**
 
    ```bash  
    git clone https://github.com/neeraj214/MyPersonalPortfolio.git  
    ```  
 
-2. **Install all dependencies:**  
+2. **Install all dependencies**
 
    ```bash  
    npm install  
@@ -57,13 +81,13 @@ Ensure that you have already installed:
    npm install --legacy-peer-deps  
    ```  
 
-3. **Run the project:**  
+3. **Run the project**
 
    ```bash  
    npm run dev  
    ```  
 
-4. **Open in browser:**  
+4. **Open in browser**
 
    Access the application through the link displayed in your terminal.  
 
@@ -73,7 +97,7 @@ Ensure that you have already installed:
 
 To create a production-ready build:  
 
-1. Run the build command:  
+1. Run the build command  
 
    ```bash  
    npm run build  
@@ -118,3 +142,21 @@ To configure Firebase for this project, follow these steps:
 
 6. **Update `firebase.js` and `firebase-comment.js` Files:**  
    - Replace the `firebaseConfig` content with your Firebase configuration.  
+
+---
+
+## 🧭 Roadmap
+- Add unit and E2E tests
+- Deploy to Vercel/Netlify
+- Add dark/light theme toggle
+- Add blog/articles section
+
+---
+
+## 🤝 Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## 📜 License
+Copyright © 2025 Neeraj Negi. All rights reserved.
