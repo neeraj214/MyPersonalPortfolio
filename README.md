@@ -2,8 +2,6 @@
 
 [![Stars](https://img.shields.io/github/stars/neeraj214/MyPersonalPortfolio?style=social)](https://github.com/neeraj214/MyPersonalPortfolio/stargazers)
 [![Forks](https://img.shields.io/github/forks/neeraj214/MyPersonalPortfolio?style=social)](https://github.com/neeraj214/MyPersonalPortfolio/forks)
-[![Issues](https://img.shields.io/github/issues/neeraj214/MyPersonalPortfolio)](https://github.com/neeraj214/MyPersonalPortfolio/issues)
-[![Last Commit](https://img.shields.io/github/last-commit/neeraj214/MyPersonalPortfolio)](https://github.com/neeraj214/MyPersonalPortfolio/commits/main)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/neeraj214/MyPersonalPortfolio/pulls)
 [![Built with React](https://img.shields.io/badge/Built%20with-React-61DAFB?logo=react&logoColor=white)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Build-Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
