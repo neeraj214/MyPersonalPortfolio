@@ -113,7 +113,7 @@ const Kaggle = memo((props) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Computer Application Student", "Tech Enthusiast"];
+const WORDS = ["BCA Student at Amrapali University", "Data Science Enthusiast"];
 const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/neeraj214/" },
