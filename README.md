@@ -7,7 +7,7 @@
 [![Vite](https://img.shields.io/badge/Build-Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
 [![TailwindCSS](https://img.shields.io/badge/Style-TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 
-I’m Neeraj Negi. This is my personal portfolio website, featuring my projects, tech stack, and ways to connect. It’s responsive, animated, and optimized for a clean developer experience.
+I’m Neeraj Negi. This is my personal portfolio website, featuring my tech stack and ways to connect. It’s responsive, animated, and optimized for a clean developer experience.
 
 **Profiles**
 - LinkedIn: https://www.linkedin.com/in/neerajnegi108/
@@ -36,7 +36,6 @@ I’m Neeraj Negi. This is my personal portfolio website, featuring my projects,
 ## 🚀 Features
 - Modern, responsive UI with Tailwind CSS
 - Animated hero and transitions (AOS + Framer Motion)
-- Project showcase cards and details
 - Contact form (FormSubmit) with elegant alerts
 - Social links (LinkedIn, GitHub, Kaggle)
 - Firebase integration ready for comments or data storage
