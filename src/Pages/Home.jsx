@@ -5,8 +5,14 @@ import {
   Mail,
   ExternalLink,
   Sparkles,
+  Code,
+  Database,
+  Globe,
+  Cpu,
+  Server,
+  Layout,
 } from "lucide-react";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -28,6 +34,67 @@ const StatusBadge = memo(() => (
     </div>
   </div>
 ));
+
+const FloatingIcons = memo(() => {
+  const icons = [
+    { Icon: Code, color: "text-blue-400", delay: 0 },
+    { Icon: Database, color: "text-purple-400", delay: 2 },
+    { Icon: Globe, color: "text-green-400", delay: 4 },
+    { Icon: Cpu, color: "text-pink-400", delay: 1 },
+    { Icon: Server, color: "text-yellow-400", delay: 3 },
+    { Icon: Layout, color: "text-indigo-400", delay: 5 },
+  ];
+
+  return (
+    <div className="relative w-full h-full flex items-center justify-center">
+      <div className="absolute w-64 h-64 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+
+      {icons.map(({ Icon, color, delay }, index) => {
+        const angle = (index / icons.length) * 2 * Math.PI;
+        const radius = 120; // Radius for the circle
+        const x = Math.cos(angle) * radius;
+        const y = Math.sin(angle) * radius;
+
+        return (
+          <motion.div
+            key={index}
+            className={`absolute p-3 sm:p-4 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 ${color} shadow-lg`}
+            initial={{ opacity: 0, x: 0, y: 0 }}
+            animate={{
+              opacity: 1,
+              x: [x, x + 10, x],
+              y: [y, y - 10, y],
+              rotate: [0, 10, -10, 0],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              delay: delay,
+              ease: "easeInOut",
+            }}
+          >
+            <Icon className="w-6 h-6 sm:w-8 sm:h-8" />
+          </motion.div>
+        );
+      })}
+
+      <motion.div
+        className="relative z-10 p-6 sm:p-8 bg-black/40 backdrop-blur-xl rounded-full border border-white/20 shadow-2xl"
+        animate={{
+          scale: [1, 1.1, 1],
+          boxShadow: [
+            "0 0 20px rgba(168, 85, 247, 0.2)",
+            "0 0 40px rgba(168, 85, 247, 0.4)",
+            "0 0 20px rgba(168, 85, 247, 0.2)",
+          ],
+        }}
+        transition={{ duration: 3, repeat: Infinity }}
+      >
+        <Code className="w-10 h-10 sm:w-14 sm:h-14 text-white" />
+      </motion.div>
+    </div>
+  );
+});
 
 const MainTitle = memo(() => (
   <div className="space-y-2" data-aos="fade-up" data-aos-delay="600">
@@ -176,22 +243,7 @@ const Home = () => {
     return () => clearTimeout(timeout);
   }, [handleTyping]);
 
-  // Lottie configuration
-  const lottieOptions = {
-    src: "https://lottie.host/58753882-bb6a-49f5-a2c0-950eda1e135a/NLbpVqGegK.lottie",
-    loop: true,
-    autoplay: true,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-      progressiveLoad: true,
-    },
-    style: { width: "100%", height: "100%" },
-    className: `w-full h-full transition-all duration-500 ${
-      isHovering
-        ? "scale-[180%] sm:scale-[160%] md:scale-[150%] lg:scale-[145%] rotate-2"
-        : "scale-[175%] sm:scale-[155%] md:scale-[145%] lg:scale-[140%]"
-    }`,
-  };
+
 
   return (
     <div className="min-h-screen bg-[#030014] overflow-hidden" id="Home">
@@ -271,7 +323,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Right Column - Optimized Lottie Animation */}
+            {/* Right Column - Animated Tech Stack */}
             <div
               className="w-full lg:w-1/2 h-[400px] lg:h-[600px] xl:h-[700px] relative flex items-center justify-center"
               onMouseEnter={() => setIsHovering(true)}
@@ -279,33 +331,7 @@ const Home = () => {
               data-aos="fade-left"
               data-aos-delay="600"
             >
-              <div className="relative w-full opacity-90">
-                <div
-                  className={`absolute inset-0 bg-gradient-to-r from-[#6366f1]/10 to-[#a855f7]/10 rounded-3xl blur-3xl transition-all duration-700 ease-in-out ${
-                    isHovering ? "opacity-50 scale-105" : "opacity-20 scale-100"
-                  }`}
-                ></div>
-
-                <div
-                  className={`relative z-10 w-full opacity-90 transform transition-transform duration-500 ${
-                    isHovering ? "scale-105" : "scale-100"
-                  }`}
-                >
-                  <DotLottieReact {...lottieOptions} />
-                </div>
-
-                <div
-                  className={`absolute inset-0 pointer-events-none transition-all duration-700 ${
-                    isHovering ? "opacity-50" : "opacity-20"
-                  }`}
-                >
-                  <div
-                    className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-br from-indigo-500/10 to-purple-500/10 blur-3xl animate-[pulse_6s_cubic-bezier(0.4,0,0.6,1)_infinite] transition-all duration-700 ${
-                      isHovering ? "scale-110" : "scale-100"
-                    }`}
-                  ></div>
-                </div>
-              </div>
+              <FloatingIcons />
             </div>
           </div>
         </div>
