@@ -234,7 +234,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              I'm Neeraj Negi, a BCA student at Amrapali University with a strong passion for Data Science and technology.My academic focus is on mastering Data Structures and Algorithms, setting the stage for a successful career in Data Science.I'm excited to take on new challenges and contribute to innovative solutions. Let's connect and explore the possibilities together!
+              I'm Neeraj Negi, a MCA student at Bennett University with a strong passion for Data Science and technology.My academic focus is on mastering Data Structures and Algorithms, setting the stage for a successful career in Computer Science.I'm excited to take on new challenges and contribute to innovative solutions. Let's connect and explore the possibilities together!
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
