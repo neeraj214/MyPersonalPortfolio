@@ -47,18 +47,18 @@ const FloatingIcons = memo(() => {
 
   return (
     <div className="relative w-full h-full flex items-center justify-center">
-      <div className="absolute w-64 h-64 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute w-96 h-96 sm:w-[28rem] sm:h-[28rem] bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
 
       {icons.map(({ Icon, color, delay }, index) => {
         const angle = (index / icons.length) * 2 * Math.PI;
-        const radius = 120; // Radius for the circle
+        const radius = 180; // Radius for the circle
         const x = Math.cos(angle) * radius;
         const y = Math.sin(angle) * radius;
 
         return (
           <motion.div
             key={index}
-            className={`absolute p-3 sm:p-4 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 ${color} shadow-lg`}
+            className={`absolute p-4 sm:p-5 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 ${color} shadow-lg`}
             initial={{ opacity: 0, x: 0, y: 0 }}
             animate={{
               opacity: 1,
@@ -73,13 +73,13 @@ const FloatingIcons = memo(() => {
               ease: "easeInOut",
             }}
           >
-            <Icon className="w-6 h-6 sm:w-8 sm:h-8" />
+            <Icon className="w-8 h-8 sm:w-10 sm:h-10" />
           </motion.div>
         );
       })}
 
       <motion.div
-        className="relative z-10 p-6 sm:p-8 bg-black/40 backdrop-blur-xl rounded-full border border-white/20 shadow-2xl"
+        className="relative z-10 p-10 sm:p-12 bg-black/40 backdrop-blur-xl rounded-full border border-white/20 shadow-2xl"
         animate={{
           scale: [1, 1.1, 1],
           boxShadow: [
@@ -90,7 +90,7 @@ const FloatingIcons = memo(() => {
         }}
         transition={{ duration: 3, repeat: Infinity }}
       >
-        <Code className="w-10 h-10 sm:w-14 sm:h-14 text-white" />
+        <Code className="w-16 h-16 sm:w-20 sm:h-20 text-white" />
       </motion.div>
     </div>
   );
@@ -325,7 +325,7 @@ const Home = () => {
 
             {/* Right Column - Animated Tech Stack */}
             <div
-              className="w-full lg:w-1/2 h-[400px] lg:h-[600px] xl:h-[700px] relative flex items-center justify-center"
+              className="w-full lg:w-1/2 h-[550px] lg:h-[750px] xl:h-[850px] relative flex items-center justify-center"
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
               data-aos="fade-left"
