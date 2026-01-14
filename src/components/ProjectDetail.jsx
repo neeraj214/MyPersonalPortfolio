@@ -118,10 +118,19 @@ const ProjectDetails = () => {
 
   if (!project) {
     return (
-      <div className="min-h-screen bg-[#030014] flex items-center justify-center">
-        <div className="text-center space-y-6 animate-fadeIn">
-          <div className="w-16 h-16 md:w-24 md:h-24 mx-auto border-4 border-blue-500/30 border-t-blue-500 rounded-full animate-spin" />
-          <h2 className="text-xl md:text-3xl font-bold text-white">Loading Project...</h2>
+      <div className="min-h-screen bg-[#030014] text-white px-[5%] sm:px-[10%] py-16">
+        <button
+          onClick={() => navigate(-1)}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-colors mb-8"
+        >
+          <ArrowLeft className="w-4 h-4" /> Back
+        </button>
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center">
+          <Code2 className="w-10 h-10 mx-auto text-purple-400 mb-4" />
+          <h1 className="text-2xl font-bold mb-2">Projects Unavailable</h1>
+          <p className="text-gray-400">
+            Project details and certificates are currently not displayed in this portfolio.
+          </p>
         </div>
       </div>
     );

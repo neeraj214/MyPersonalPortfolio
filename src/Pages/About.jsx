@@ -1,13 +1,5 @@
 import React, { useEffect, memo, useMemo } from "react";
-import {
-  FileText,
-  Code,
-  Award,
-  Globe,
-  ArrowUpRight,
-  Sparkles,
-  UserCheck,
-} from "lucide-react";
+import { FileText, Globe, ArrowUpRight, Sparkles, UserCheck } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -124,11 +116,7 @@ const StatCard = memo(
 
 const AboutPage = () => {
   // Memoized calculations
-  const { totalProjects, totalCertificates, YearExperience } = useMemo(() => {
-    const storedProjects = JSON.parse(localStorage.getItem("projects") || "[]");
-    const storedCertificates = JSON.parse(
-      localStorage.getItem("certificates") || "[]"
-    );
+  const { YearExperience } = useMemo(() => {
 
     const startDate = new Date("2021-11-06");
     const today = new Date();
@@ -140,11 +128,7 @@ const AboutPage = () => {
         ? 1
         : 0);
 
-    return {
-      totalProjects: storedProjects.length,
-      totalCertificates: storedCertificates.length,
-      YearExperience: experience,
-    };
+    return { YearExperience: experience };
   }, []);
 
   // Optimized AOS initialization
@@ -175,22 +159,6 @@ const AboutPage = () => {
   const statsData = useMemo(
     () => [
       {
-        icon: Code,
-        color: "from-[#6366f1] to-[#a855f7]",
-        value: totalProjects,
-        label: "Total Projects",
-        description: "Innovative web solutions crafted",
-        animation: "fade-right",
-      },
-      {
-        icon: Award,
-        color: "from-[#a855f7] to-[#6366f1]",
-        value: totalCertificates,
-        label: "Certificates",
-        description: "Professional skills validated",
-        animation: "fade-up",
-      },
-      {
         icon: Globe,
         color: "from-[#6366f1] to-[#a855f7]",
         value: YearExperience,
@@ -199,7 +167,7 @@ const AboutPage = () => {
         animation: "fade-left",
       },
     ],
-    [totalProjects, totalCertificates, YearExperience]
+    [YearExperience]
   );
 
   return (
@@ -238,10 +206,7 @@ const AboutPage = () => {
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              <a
-                href=""
-                className="w-full lg:w-auto"
-              >
+              <a href="" className="w-full lg:w-auto">
                 <button
                   data-aos="fade-up"
                   data-aos-duration="800"
@@ -250,28 +215,18 @@ const AboutPage = () => {
                   <FileText className="w-4 h-4 sm:w-5 sm:h-5" /> Download CV
                 </button>
               </a>
-              <a href="#Portofolio" className="w-full lg:w-auto">
-                <button
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg border border-[#a855f7]/50 text-[#a855f7] font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 hover:bg-[#a855f7]/10 animate-bounce-slow delay-200"
-                >
-                  <Code className="w-4 h-4 sm:w-5 sm:h-5" /> View Projects
-                </button>
-              </a>
+              {/* Removed View Projects button */}
             </div>
           </div>
 
           <ProfileImage />
         </div>
 
-        <a href="#Portofolio">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 cursor-pointer">
-            {statsData.map((stat) => (
-              <StatCard key={stat.label} {...stat} />
-            ))}
-          </div>
-        </a>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+          {statsData.map((stat) => (
+            <StatCard key={stat.label} {...stat} />
+          ))}
+        </div>
       </div>
 
       <style jsx>{`
