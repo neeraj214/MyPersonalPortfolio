@@ -83,6 +83,16 @@ function App() {
       ];
       localStorage.setItem("projects", JSON.stringify(seed));
     }
+    const existingCerts = localStorage.getItem("certificates");
+    if (!existingCerts) {
+      const certs = [
+        {
+          id: 1,
+          ImgSertif: "https://via.placeholder.com/1200x800?text=Dummy+Certificate"
+        }
+      ];
+      localStorage.setItem("certificates", JSON.stringify(certs));
+    }
   }, []);
 
   return (
