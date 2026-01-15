@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./index.css";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
@@ -66,6 +66,24 @@ const ProjectPageLayout = () => (
 
 function App() {
   const [showWelcome, setShowWelcome] = useState(true);
+  useEffect(() => {
+    const existing = localStorage.getItem("projects");
+    if (!existing) {
+      const seed = [
+        {
+          id: 1,
+          Title: "Dummy Project",
+          Description: "A placeholder project entry for portfolio testing.",
+          Img: "https://via.placeholder.com/800x400?text=Dummy+Project",
+          Link: "",
+          Github: "https://github.com/neeraj214/MyPersonalPortfolio",
+          Features: ["Placeholder feature A", "Placeholder feature B"],
+          TechStack: ["React", "Tailwind"]
+        }
+      ];
+      localStorage.setItem("projects", JSON.stringify(seed));
+    }
+  }, []);
 
   return (
     <BrowserRouter>

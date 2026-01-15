@@ -8,9 +8,10 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import TechStackIcon from "../components/TechStackIcon";
+import CardProject from "../components/CardProject";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Boxes } from "lucide-react";
+import { Boxes, Layers } from "lucide-react";
 
 // Separate ShowMore/ShowLess button component
 const ToggleButton = ({ onClick, isShowingMore }) => (
@@ -115,6 +116,7 @@ export default function FullWidthTabs() {
   const theme = useTheme();
   const [value, setValue] = useState(0);
   const isMobile = window.innerWidth < 768;
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     // Initialize AOS once
@@ -124,6 +126,10 @@ export default function FullWidthTabs() {
   }, []);
 
   // Removed projects and certificates fetching
+  useEffect(() => {
+    const stored = JSON.parse(localStorage.getItem("projects") || "[]");
+    setProjects(stored);
+  }, []);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -227,6 +233,11 @@ export default function FullWidthTabs() {
               label="Tech Stack"
               {...a11yProps(0)}
             />
+            <Tab
+              icon={<Layers className="mb-2 w-5 h-5 transition-all duration-300" />}
+              label="Projects"
+              {...a11yProps(1)}
+            />
           </Tabs>
         </AppBar>
 
@@ -246,6 +257,22 @@ export default function FullWidthTabs() {
                   >
                     <TechStackIcon TechStackIcon={stack.icon} Language={stack.language} />
                   </div>
+                ))}
+              </div>
+            </div>
+          </TabPanel>
+          <TabPanel value={value} index={1} dir={theme.direction}>
+            <div className="container mx-auto overflow-hidden pb-[5%]">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {projects.map((p) => (
+                  <CardProject
+                    key={p.id}
+                    Img={p.Img}
+                    Title={p.Title}
+                    Description={p.Description}
+                    Link={p.Link}
+                    id={p.id}
+                  />
                 ))}
               </div>
             </div>
