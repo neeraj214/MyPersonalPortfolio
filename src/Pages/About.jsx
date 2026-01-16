@@ -215,7 +215,15 @@ const AboutPage = () => {
                   <FileText className="w-4 h-4 sm:w-5 sm:h-5" /> Download CV
                 </button>
               </a>
-              {/* Removed View Projects button */}
+              <a href="#Portofolio" className="w-full lg:w-auto">
+                <button
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-white/5 text-white font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 border border-white/10 hover:bg-white/10"
+                >
+                  <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" /> View Projects
+                </button>
+              </a>
             </div>
           </div>
 
