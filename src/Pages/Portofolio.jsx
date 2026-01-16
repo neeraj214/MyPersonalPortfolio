@@ -111,6 +111,22 @@ const techStacks = [
   { icon: "MUI.svg", language: "Material UI" },
   { icon: "vercel.svg", language: "Vercel" },
   { icon: "SweetAlert.svg", language: "SweetAlert2" },
+  // Data Science / AI / NLP / ML / IR
+  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/python.svg", language: "Python" },
+  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/numpy.svg", language: "NumPy" },
+  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/pandas.svg", language: "Pandas" },
+  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/scikitlearn.svg", language: "scikit-learn" },
+  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tensorflow.svg", language: "TensorFlow" },
+  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/pytorch.svg", language: "PyTorch" },
+  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/jupyter.svg", language: "Jupyter" },
+  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/nltk.svg", language: "NLTK" },
+  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/spacy.svg", language: "spaCy" },
+  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/huggingface.svg", language: "Hugging Face" },
+  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openai.svg", language: "OpenAI" },
+  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/apachespark.svg", language: "Apache Spark" },
+  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/streamlit.svg", language: "Streamlit" },
+  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/fastapi.svg", language: "FastAPI" },
+  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/opencv.svg", language: "OpenCV" }
 ];
 
 export default function FullWidthTabs() {
@@ -260,12 +276,6 @@ export default function FullWidthTabs() {
         >
           <TabPanel value={value} index={0} dir={theme.direction}>
             <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
-              <div className="w-full flex justify-end mb-4">
-                <ToggleButton
-                  onClick={() => setIsShowingMore((v) => !v)}
-                  isShowingMore={isShowingMore}
-                />
-              </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-8 gap-5">
                 {(isShowingMore ? techStacks : techStacks.slice(0, isMobile ? 6 : 12)).map((stack, index) => (
                   <div
@@ -276,6 +286,12 @@ export default function FullWidthTabs() {
                     <TechStackIcon TechStackIcon={stack.icon} Language={stack.language} />
                   </div>
                 ))}
+              </div>
+              <div className="w-full flex justify-center mt-4">
+                <ToggleButton
+                  onClick={() => setIsShowingMore((v) => !v)}
+                  isShowingMore={isShowingMore}
+                />
               </div>
             </div>
           </TabPanel>
