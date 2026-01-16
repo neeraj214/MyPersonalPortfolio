@@ -119,6 +119,7 @@ export default function FullWidthTabs() {
   const isMobile = window.innerWidth < 768;
   const [projects, setProjects] = useState([]);
   const [certificates, setCertificates] = useState([]);
+  const [isShowingMore, setIsShowingMore] = useState(false);
 
   useEffect(() => {
     // Initialize AOS once
@@ -259,8 +260,14 @@ export default function FullWidthTabs() {
         >
           <TabPanel value={value} index={0} dir={theme.direction}>
             <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
+              <div className="w-full flex justify-end mb-4">
+                <ToggleButton
+                  onClick={() => setIsShowingMore((v) => !v)}
+                  isShowingMore={isShowingMore}
+                />
+              </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-8 gap-5">
-                {techStacks.map((stack, index) => (
+                {(isShowingMore ? techStacks : techStacks.slice(0, isMobile ? 6 : 12)).map((stack, index) => (
                   <div
                     key={index}
                     data-aos={index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"}
