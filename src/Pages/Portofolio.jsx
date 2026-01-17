@@ -104,21 +104,19 @@ const techStacks = [
   { icon: "firebase.svg", language: "Firebase" },
   { icon: "vercel.svg", language: "Vercel" },
   // Data Science / AI / NLP / ML / IR
-  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/python.svg", language: "Python" },
-  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/numpy.svg", language: "NumPy" },
-  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/pandas.svg", language: "Pandas" },
-  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/scikitlearn.svg", language: "scikit-learn" },
-  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tensorflow.svg", language: "TensorFlow" },
-  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/pytorch.svg", language: "PyTorch" },
-  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/jupyter.svg", language: "Jupyter" },
-  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/nltk.svg", language: "NLTK" },
-  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/spacy.svg", language: "spaCy" },
-  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/huggingface.svg", language: "Hugging Face" },
-  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openai.svg", language: "OpenAI" },
-  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/apachespark.svg", language: "Apache Spark" },
-  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/streamlit.svg", language: "Streamlit" },
-  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/fastapi.svg", language: "FastAPI" },
-  { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/opencv.svg", language: "OpenCV" }
+  { icon: "https://skillicons.dev/icons?i=python", language: "Python" },
+  { icon: "https://skillicons.dev/icons?i=numpy", language: "NumPy" },
+  { icon: "https://skillicons.dev/icons?i=pandas", language: "Pandas" },
+  { icon: "https://skillicons.dev/icons?i=sklearn", language: "scikit-learn" },
+  { icon: "https://skillicons.dev/icons?i=tensorflow", language: "TensorFlow" },
+  { icon: "https://skillicons.dev/icons?i=pytorch", language: "PyTorch" },
+  { icon: "https://skillicons.dev/icons?i=jupyter", language: "Jupyter" },
+  { icon: "https://skillicons.dev/icons?i=huggingface", language: "Hugging Face" },
+  { icon: "https://skillicons.dev/icons?i=openai", language: "OpenAI" },
+  { icon: "https://skillicons.dev/icons?i=spark", language: "Apache Spark" },
+  { icon: "https://skillicons.dev/icons?i=streamlit", language: "Streamlit" },
+  { icon: "https://skillicons.dev/icons?i=fastapi", language: "FastAPI" },
+  { icon: "https://skillicons.dev/icons?i=opencv", language: "OpenCV" }
 ];
 
 export default function FullWidthTabs() {
