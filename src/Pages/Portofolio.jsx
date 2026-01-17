@@ -101,16 +101,8 @@ function a11yProps(index) {
 const techStacks = [
   { icon: "html.svg", language: "HTML" },
   { icon: "css.svg", language: "CSS" },
-  { icon: "javascript.svg", language: "JavaScript" },
-  { icon: "tailwind.svg", language: "Tailwind CSS" },
-  { icon: "reactjs.svg", language: "ReactJS" },
-  { icon: "vite.svg", language: "Vite" },
-  { icon: "nodejs.svg", language: "Node JS" },
-  { icon: "bootstrap.svg", language: "Bootstrap" },
   { icon: "firebase.svg", language: "Firebase" },
-  { icon: "MUI.svg", language: "Material UI" },
   { icon: "vercel.svg", language: "Vercel" },
-  { icon: "SweetAlert.svg", language: "SweetAlert2" },
   // Data Science / AI / NLP / ML / IR
   { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/python.svg", language: "Python" },
   { icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/numpy.svg", language: "NumPy" },
