@@ -99,12 +99,7 @@ function a11yProps(index) {
 }
 
 const techStacks = [
-  { icon: "html.svg", language: "HTML" },
-  { icon: "css.svg", language: "CSS" },
-  { icon: "firebase.svg", language: "Firebase" },
-  { icon: "vercel.svg", language: "Vercel" },
-  // Data Science / AI / NLP / ML / IR
-  { icon: "https://skillicons.dev/icons?i=python", language: "Python" },
+  { icon: "https://skillicons.dev/icons?i=py", language: "Python" },
   { icon: "https://skillicons.dev/icons?i=numpy", language: "NumPy" },
   { icon: "https://skillicons.dev/icons?i=pandas", language: "Pandas" },
   { icon: "https://skillicons.dev/icons?i=sklearn", language: "scikit-learn" },
@@ -116,7 +111,11 @@ const techStacks = [
   { icon: "https://skillicons.dev/icons?i=spark", language: "Apache Spark" },
   { icon: "https://skillicons.dev/icons?i=streamlit", language: "Streamlit" },
   { icon: "https://skillicons.dev/icons?i=fastapi", language: "FastAPI" },
-  { icon: "https://skillicons.dev/icons?i=opencv", language: "OpenCV" }
+  { icon: "https://skillicons.dev/icons?i=opencv", language: "OpenCV" },
+  { icon: "html.svg", language: "HTML" },
+  { icon: "css.svg", language: "CSS" },
+  { icon: "firebase.svg", language: "Firebase" },
+  { icon: "vercel.svg", language: "Vercel" }
 ];
 
 export default function FullWidthTabs() {
