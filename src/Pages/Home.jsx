@@ -181,7 +181,7 @@ const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
 const WORDS = ["MCA Student at Bennett University", "Data Science Enthusiast"];
-const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
+const TECH_STACK = ["Python", "AI & ML", "NLP", "Problem Solving"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/neeraj214/" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/neerajnegi108/" },
