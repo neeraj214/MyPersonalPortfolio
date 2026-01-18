@@ -10,8 +10,7 @@ import Box from "@mui/material/Box";
 import CardProject from "../components/CardProject";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Boxes, Layers, Award } from "lucide-react";
-import Certificate from "../components/Certificate";
+import { Boxes, Layers, Award, GraduationCap, Brain, Cloud, ShieldCheck, BarChart3, Server } from "lucide-react";
 
 function TabPanel({ children, value, index, ...other }) {
   return (
@@ -60,6 +59,51 @@ const techStacks = [
   { icon: "css.svg", language: "CSS" },
   { icon: "firebase.svg", language: "Firebase" },
   { icon: "vercel.svg", language: "Vercel" }
+];
+
+const certificateCards = [
+  {
+    title: "Machine Learning Specialization",
+    org: "Coursera",
+    year: "2024",
+    icon: GraduationCap,
+    accent: "from-blue-500/20 via-purple-500/20 to-pink-500/20",
+  },
+  {
+    title: "AWS Certified Cloud Practitioner",
+    org: "AWS",
+    year: "2025",
+    icon: Cloud,
+    accent: "from-cyan-500/20 via-blue-500/20 to-purple-500/20",
+  },
+  {
+    title: "Microsoft Azure Fundamentals (AZ-900)",
+    org: "Microsoft",
+    year: "2024",
+    icon: Server,
+    accent: "from-indigo-500/20 via-blue-500/20 to-purple-500/20",
+  },
+  {
+    title: "Google Data Analytics Professional",
+    org: "Google",
+    year: "2025",
+    icon: BarChart3,
+    accent: "from-teal-500/20 via-blue-500/20 to-purple-500/20",
+  },
+  {
+    title: "Advanced NLP with Transformers",
+    org: "Udemy",
+    year: "2025",
+    icon: Brain,
+    accent: "from-fuchsia-500/20 via-purple-500/20 to-blue-500/20",
+  },
+  {
+    title: "Cyber Security Fundamentals",
+    org: "Meta",
+    year: "2024",
+    icon: ShieldCheck,
+    accent: "from-purple-500/20 via-pink-500/20 to-blue-500/20",
+  },
 ];
 
 export default function FullWidthTabs() {
@@ -235,9 +279,42 @@ export default function FullWidthTabs() {
           <TabPanel value={value} index={2} dir={theme.direction}>
             <div className="container mx-auto overflow-hidden pb-[5%]">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {certificates.map((c) => (
-                  <Certificate key={c.id} ImgSertif={c.ImgSertif} />
-                ))}
+                {certificateCards.map((card, index) => {
+                  const Icon = card.icon;
+                  return (
+                    <div
+                      key={index}
+                      className="group relative aspect-square rounded-2xl bg-white/[0.04] border border-white/10 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-white/20"
+                      data-aos="fade-up"
+                      data-aos-duration={900 + index * 50}
+                    >
+                      <div className={`absolute -inset-0.5 bg-gradient-to-br ${card.accent} rounded-2xl opacity-0 group-hover:opacity-100 blur-xl transition-all duration-500`} />
+                      <div className="relative z-10 h-full w-full p-6 flex flex-col">
+                        <div className="flex items-start justify-between">
+                          <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center">
+                            <Icon className="w-6 h-6 text-blue-300" />
+                          </div>
+                          <span className="px-3 py-1 rounded-full text-xs font-medium bg-white/5 border border-white/10 text-slate-300">
+                            {card.year}
+                          </span>
+                        </div>
+                        <div className="mt-4">
+                          <h3 className="text-lg font-semibold bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 bg-clip-text text-transparent">
+                            {card.title}
+                          </h3>
+                          <p className="text-slate-400 text-sm mt-1">{card.org}</p>
+                        </div>
+                        <div className="mt-auto">
+                          <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+                          <div className="mt-4 flex items-center gap-2 text-xs text-slate-400">
+                            <Award className="w-4 h-4 text-purple-300" />
+                            <span>Certificate • Verified Achievement</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </TabPanel>
