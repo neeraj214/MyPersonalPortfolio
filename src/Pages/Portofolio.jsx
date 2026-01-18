@@ -46,14 +46,14 @@ function a11yProps(index) {
 
 const techStacks = [
   { icon: "https://skillicons.dev/icons?i=py", language: "Python" },
-  { icon: "https://raw.githubusercontent.com/numpy/numpy/main/branding/icons/primary/numpylogo.svg", language: "NumPy" },
+  { icon: "https://commons.wikimedia.org/wiki/Special:FilePath/NumPy_logo_2020.svg", language: "NumPy" },
   { icon: "https://raw.githubusercontent.com/pandas-dev/pandas/main/web/pandas/static/img/pandas.svg", language: "Pandas" },
   { icon: "https://skillicons.dev/icons?i=sklearn", language: "scikit-learn" },
   { icon: "https://skillicons.dev/icons?i=tensorflow", language: "TensorFlow" },
   { icon: "https://skillicons.dev/icons?i=pytorch", language: "PyTorch" },
   { icon: "https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.svg", language: "Hugging Face" },
   { icon: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg", language: "OpenAI" },
-  { icon: "https://streamlit.io/images/brand/streamlit-logo-primary-colour.svg", language: "Streamlit" },
+  { icon: "https://commons.wikimedia.org/wiki/Special:FilePath/Streamlit_logo_primary_colormark_darktext.svg", language: "Streamlit" },
   { icon: "https://skillicons.dev/icons?i=fastapi", language: "FastAPI" },
   { icon: "https://skillicons.dev/icons?i=opencv", language: "OpenCV" },
   { icon: "html.svg", language: "HTML" },
