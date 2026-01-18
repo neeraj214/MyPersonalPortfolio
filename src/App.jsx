@@ -83,15 +83,22 @@ function App() {
       ];
       localStorage.setItem("projects", JSON.stringify(seed));
     }
-    const existingCerts = localStorage.getItem("certificates");
-    if (!existingCerts) {
-      const certs = [
-        {
-          id: 1,
-          ImgSertif: "https://via.placeholder.com/1200x800?text=Dummy+Certificate"
-        }
-      ];
-      localStorage.setItem("certificates", JSON.stringify(certs));
+    const existingCertsRaw = localStorage.getItem("certificates");
+    const defaultCerts = [
+      { id: 1, ImgSertif: "https://commons.wikimedia.org/wiki/Special:FilePath/Certificate_(no_image).svg" },
+      { id: 2, ImgSertif: "https://commons.wikimedia.org/wiki/Special:FilePath/University_Diploma_or_Certificate_Flat_Icon_Vector.svg" },
+      { id: 3, ImgSertif: "https://commons.wikimedia.org/wiki/Special:FilePath/Zertifikat.png" },
+      { id: 4, ImgSertif: "https://commons.wikimedia.org/wiki/Special:FilePath/Wikirreto_diploma_azul.png" },
+      { id: 5, ImgSertif: "https://commons.wikimedia.org/wiki/Special:FilePath/University_Degree_Icon.png" },
+      { id: 6, ImgSertif: "https://commons.wikimedia.org/wiki/Special:FilePath/Icons8_flat_diploma_2.svg" },
+    ];
+    try {
+      const parsed = JSON.parse(existingCertsRaw || "[]");
+      if (!Array.isArray(parsed) || parsed.length < 6) {
+        localStorage.setItem("certificates", JSON.stringify(defaultCerts));
+      }
+    } catch {
+      localStorage.setItem("certificates", JSON.stringify(defaultCerts));
     }
   }, []);
 
