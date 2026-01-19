@@ -1,8 +1,9 @@
 import { useEffect, memo, useMemo } from "react";
 import PropTypes from "prop-types";
-import { FileText, Globe, ArrowUpRight, Sparkles, FolderKanban, Layers } from "lucide-react";
+import { FileText, ArrowUpRight, Sparkles, FolderKanban, Layers, Briefcase } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import myPhoto from "../assets/myphoto01.jpg";
 
 // Memoized Components
 const Header = memo(function Header() {
@@ -47,7 +48,7 @@ const ProfileImage = memo(function ProfileImage() {
             <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 via-transparent to-blue-500/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 hidden sm:block" />
  
             <img
-              src="/src/assets/myphoto01.jpg"
+              src={myPhoto}
               alt="Profile"
               className="w-full h-full object-cover object-center scale-110 transition-all duration-700 group-hover:scale-125 group-hover:rotate-2"
               loading="lazy"
@@ -127,22 +128,6 @@ StatCard.propTypes = {
 };
 
 const AboutPage = () => {
-  // Memoized calculations
-  const { YearExperience } = useMemo(() => {
-
-    const startDate = new Date("2021-11-06");
-    const today = new Date();
-    const experience =
-      today.getFullYear() -
-      startDate.getFullYear() -
-      (today <
-      new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate())
-        ? 1
-        : 0);
-
-    return { YearExperience: experience };
-  }, []);
-
   // Optimized AOS initialization
   useEffect(() => {
     const initAOS = () => {
@@ -171,11 +156,11 @@ const AboutPage = () => {
   const statsData = useMemo(
     () => [
       {
-        icon: Globe,
+        icon: Briefcase,
         color: "from-[#6366f1] to-[#a855f7]",
-        value: YearExperience,
-        label: "Years of Experience",
-        description: "Continuous learning journey",
+        value: "3",
+        label: "Total Internships",
+        description: "Hands-on Industry Work",
         animation: "fade-left",
       },
       {
@@ -195,7 +180,7 @@ const AboutPage = () => {
         animation: "fade-right",
       },
     ],
-    [YearExperience]
+    []
   );
 
   return (
