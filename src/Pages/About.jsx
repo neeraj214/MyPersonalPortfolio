@@ -1,5 +1,5 @@
 import React, { useEffect, memo, useMemo } from "react";
-import { FileText, Globe, ArrowUpRight, Sparkles, UserCheck } from "lucide-react";
+import { FileText, Globe, ArrowUpRight, Sparkles, UserCheck, FolderKanban } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -165,6 +165,14 @@ const AboutPage = () => {
         label: "Years of Experience",
         description: "Continuous learning journey",
         animation: "fade-left",
+      },
+      {
+        icon: FolderKanban,
+        color: "from-[#6366f1] to-[#a855f7]",
+        value: "10+",
+        label: "Projects Completed",
+        description: "AI, ML & Software Projects",
+        animation: "fade-up",
       },
     ],
     [YearExperience]
