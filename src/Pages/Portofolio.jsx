@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
 import { useTheme } from "@mui/material/styles";
@@ -109,9 +109,7 @@ const certificateCards = [
 export default function FullWidthTabs() {
   const theme = useTheme();
   const [value, setValue] = useState(0);
-  const isMobile = window.innerWidth < 768;
   const [projects, setProjects] = useState([]);
-  const [certificates, setCertificates] = useState([]);
 
   useEffect(() => {
     // Initialize AOS once
@@ -124,10 +122,6 @@ export default function FullWidthTabs() {
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem("projects") || "[]");
     setProjects(stored);
-  }, []);
-  useEffect(() => {
-    const certs = JSON.parse(localStorage.getItem("certificates") || "[]");
-    setCertificates(certs);
   }, []);
 
   const handleChange = (event, newValue) => {
