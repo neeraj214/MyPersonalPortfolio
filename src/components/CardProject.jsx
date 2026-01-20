@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ExternalLink, ArrowRight } from 'lucide-react';
 
 const CardProject = ({ Img, Video, Title, Description, TechStack = [], Link: ProjectLink, id }) => {
+  const [imgError, setImgError] = useState(false);
   const handleLiveDemo = (e) => {
     if (!ProjectLink) {
       e.preventDefault();
@@ -28,7 +30,11 @@ const CardProject = ({ Img, Video, Title, Description, TechStack = [], Link: Pro
           <div className="relative overflow-hidden rounded-t-xl">
             <div className="relative w-full">
               <div className="aspect-video w-full overflow-hidden">
-                {Video ? (
+                {imgError ? (
+                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-800 to-slate-900 text-slate-300">
+                    <span className="text-xs">Media not available</span>
+                  </div>
+                ) : Video ? (
                   <video
                     src={Video}
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
@@ -36,6 +42,7 @@ const CardProject = ({ Img, Video, Title, Description, TechStack = [], Link: Pro
                     playsInline
                     loop
                     autoPlay
+                    onError={() => setImgError(true)}
                   />
                 ) : (
                   <img
@@ -43,6 +50,8 @@ const CardProject = ({ Img, Video, Title, Description, TechStack = [], Link: Pro
                     alt={Title}
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
+                    onError={() => setImgError(true)}
+                    crossOrigin="anonymous"
                   />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
