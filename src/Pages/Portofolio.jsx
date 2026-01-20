@@ -267,18 +267,18 @@ export default function FullWidthTabs() {
             }}
           >
             <Tab
-              icon={<Boxes className="mb-2 w-5 h-5 transition-all duration-300" />}
-              label="Tech Stack"
-              {...a11yProps(0)}
-            />
-            <Tab
               icon={<Layers className="mb-2 w-5 h-5 transition-all duration-300" />}
               label="Projects"
-              {...a11yProps(1)}
+              {...a11yProps(0)}
             />
             <Tab
               icon={<Award className="mb-2 w-5 h-5 transition-all duration-300" />}
               label="Certificates"
+              {...a11yProps(1)}
+            />
+            <Tab
+              icon={<Boxes className="mb-2 w-5 h-5 transition-all duration-300" />}
+              label="Tech Stack"
               {...a11yProps(2)}
             />
           </Tabs>
@@ -290,32 +290,6 @@ export default function FullWidthTabs() {
           onChangeIndex={setValue}
         >
           <TabPanel value={value} index={0} dir={theme.direction}>
-            <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6" role="list">
-                {techStacks.map((stack, index) => (
-                  <div
-                    key={index}
-                    role="listitem"
-                    aria-label={stack.language}
-                    className="rounded-xl bg-white/5 border border-white/10 p-5 flex flex-col items-center justify-center min-h-[180px] md:min-h-[200px] hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
-                  >
-                    <div className="w-20 h-20 md:w-24 md:h-24">
-                      <img
-                        src={stack.icon}
-                        alt={`${stack.language} logo`}
-                        className="w-full h-full object-contain"
-                        loading="lazy"
-                      />
-                    </div>
-                    <span className="mt-3 text-sm md:text-base text-slate-200 font-semibold">
-                      {stack.language}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </TabPanel>
-          <TabPanel value={value} index={1} dir={theme.direction}>
             <div className="container mx-auto overflow-hidden pb-[5%]">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projectsData.map((p) => (
@@ -332,7 +306,7 @@ export default function FullWidthTabs() {
               </div>
             </div>
           </TabPanel>
-          <TabPanel value={value} index={2} dir={theme.direction}>
+          <TabPanel value={value} index={1} dir={theme.direction}>
             <div className="container mx-auto overflow-hidden pb-[5%]">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {certificateCards.map((card, index) => {
@@ -371,6 +345,32 @@ export default function FullWidthTabs() {
                     </div>
                   );
                 })}
+              </div>
+            </div>
+          </TabPanel>
+          <TabPanel value={value} index={2} dir={theme.direction}>
+            <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6" role="list">
+                {techStacks.map((stack, index) => (
+                  <div
+                    key={index}
+                    role="listitem"
+                    aria-label={stack.language}
+                    className="rounded-xl bg-white/5 border border-white/10 p-5 flex flex-col items-center justify-center min-h-[180px] md:min_h-[200px] hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
+                  >
+                    <div className="w-20 h-20 md:w-24 md:h-24">
+                      <img
+                        src={stack.icon}
+                        alt={`${stack.language} logo`}
+                        className="w-full h-full object-contain"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span className="mt-3 text-sm md:text-base text-slate-200 font-semibold">
+                      {stack.language}
+                    </span>
+                  </div>
+                ))}
               </div>
             </div>
           </TabPanel>
