@@ -315,6 +315,23 @@ export default function FullWidthTabs() {
               </div>
             </div>
           </TabPanel>
+          <TabPanel value={value} index={1} dir={theme.direction}>
+            <div className="container mx-auto overflow-hidden pb-[5%]">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {projectsData.map((p) => (
+                  <CardProject
+                    key={p.id}
+                    Img={p.Img}
+                    Title={p.Title}
+                    Description={p.Description}
+                    Link={p.Link}
+                    id={p.id}
+                    TechStack={p.TechStack}
+                  />
+                ))}
+              </div>
+            </div>
+          </TabPanel>
           <TabPanel value={value} index={2} dir={theme.direction}>
             <div className="container mx-auto overflow-hidden pb-[5%]">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -354,23 +371,6 @@ export default function FullWidthTabs() {
                     </div>
                   );
                 })}
-              </div>
-            </div>
-          </TabPanel>
-          <TabPanel value={value} index={1} dir={theme.direction}>
-            <div className="container mx-auto overflow-hidden pb-[5%]">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {projectsData.map((p) => (
-                  <CardProject
-                    key={p.id}
-                    Img={p.Img}
-                    Title={p.Title}
-                    Description={p.Description}
-                    Link={p.Link}
-                    id={p.id}
-                    TechStack={p.TechStack}
-                  />
-                ))}
               </div>
             </div>
           </TabPanel>
