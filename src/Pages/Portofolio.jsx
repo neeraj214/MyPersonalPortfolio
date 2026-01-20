@@ -106,10 +106,60 @@ const certificateCards = [
   },
 ];
 
+const projectsData = [
+  {
+    id: "p1",
+    Title: "Real-time Emotion Detection (CNN)",
+    Description: "Detects facial emotions in live video using CNN with optimized inference.",
+    Img: "https://images.unsplash.com/photo-1526378722444-4a1121188589?q=80&w=1200&auto=format&fit=crop",
+    TechStack: ["Python", "TensorFlow", "OpenCV", "Streamlit"],
+    Link: "https://github.com/neeraj-ml/emotion-detection-cnn"
+  },
+  {
+    id: "p2",
+    Title: "Transformer-based Text Summarization API",
+    Description: "Abstractive summarization service built with BART/PEGASUS and FastAPI.",
+    Img: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop",
+    TechStack: ["Python", "Transformers", "NLP", "FastAPI", "Docker"],
+    Link: "https://github.com/neeraj-ml/text-summarization-api"
+  },
+  {
+    id: "p3",
+    Title: "Financial Fraud Detection (XGBoost)",
+    Description: "ML pipeline to flag fraudulent transactions using engineered features.",
+    Img: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1200&auto=format&fit=crop",
+    TechStack: ["Python", "scikit-learn", "XGBoost", "Pandas"],
+    Link: "https://github.com/neeraj-ml/fraud-detection-xgboost"
+  },
+  {
+    id: "p4",
+    Title: "YOLOv8 Object Detection",
+    Description: "Custom-trained YOLOv8 model with a Streamlit UI for quick demos.",
+    Img: "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?q=80&w=1200&auto=format&fit=crop",
+    TechStack: ["Python", "PyTorch", "YOLOv8", "OpenCV", "Streamlit"],
+    Link: "https://github.com/neeraj-ml/yolov8-object-detection"
+  },
+  {
+    id: "p5",
+    Title: "RAG-based QA Chatbot",
+    Description: "Retrieval-Augmented Generation chatbot using FAISS and OpenAI APIs.",
+    Img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop",
+    TechStack: ["Python", "LangChain", "FAISS", "OpenAI", "FastAPI"],
+    Link: "https://github.com/neeraj-ml/rag-qa-chatbot"
+  },
+  {
+    id: "p6",
+    Title: "MLOps: CI/CD Model Deployment",
+    Description: "Automated deployment pipeline with GitHub Actions and Vercel.",
+    Img: "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop",
+    TechStack: ["React", "FastAPI", "Docker", "Vercel", "GitHub Actions"],
+    Link: "https://github.com/neeraj-ml/mlops-cicd-deployment"
+  }
+];
+
 export default function FullWidthTabs() {
   const theme = useTheme();
   const [value, setValue] = useState(0);
-  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     // Initialize AOS once
@@ -118,11 +168,6 @@ export default function FullWidthTabs() {
     });
   }, []);
 
-  // Removed projects and certificates fetching
-  useEffect(() => {
-    const stored = JSON.parse(localStorage.getItem("projects") || "[]");
-    setProjects(stored);
-  }, []);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -315,7 +360,7 @@ export default function FullWidthTabs() {
           <TabPanel value={value} index={1} dir={theme.direction}>
             <div className="container mx-auto overflow-hidden pb-[5%]">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {projects.map((p) => (
+                {projectsData.map((p) => (
                   <CardProject
                     key={p.id}
                     Img={p.Img}
@@ -323,6 +368,7 @@ export default function FullWidthTabs() {
                     Description={p.Description}
                     Link={p.Link}
                     id={p.id}
+                    TechStack={p.TechStack}
                   />
                 ))}
               </div>
