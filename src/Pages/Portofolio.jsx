@@ -143,11 +143,11 @@ const projectsData = [
   },
   {
     id: "p5",
-    Title: "RAG-based QA Chatbot",
-    Description: "Retrieval-Augmented Generation chatbot using FAISS and OpenAI APIs.",
+    Title: "Voice-Controlled OS Shell",
+    Description: "A Python-based voice-controlled shell that lets users execute filesystem and system commands using natural language speech or text, with a secure sandbox, optional Tkinter GUI, TTS feedback, and detailed command logging",
     Img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop",
-    TechStack: ["Python", "LangChain", "FAISS", "OpenAI", "FastAPI"],
-    Link: "https://github.com/neeraj-ml/rag-qa-chatbot"
+    TechStack: ["Python", "Text-to-Speech (TTS)", "Sandbox", "OpenAITkinter (GUI)", "PyAudio"],
+    Link: "https://github.com/neeraj214/Voice-Controlled-OS-Shell"
   },
   {
     id: "p6",
