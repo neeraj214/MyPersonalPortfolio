@@ -8,9 +8,11 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import CardProject from "../components/CardProject";
+import Certificate from "../components/Certificate";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Boxes, Layers, Award, GraduationCap, Brain, Cloud, ShieldCheck, BarChart3, Server } from "lucide-react";
+import imgCert from "../../image.png";
 
 function TabPanel({ children, value, index, ...other }) {
   return (
@@ -345,6 +347,11 @@ export default function FullWidthTabs() {
                     </div>
                   );
                 })}
+              </div>
+              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[imgCert, ...(JSON.parse(localStorage.getItem("certificates") || "[]").map((c) => c.ImgSertif) || [])].map((src, i) => (
+                  <Certificate key={i} ImgSertif={src} />
+                ))}
               </div>
             </div>
           </TabPanel>
