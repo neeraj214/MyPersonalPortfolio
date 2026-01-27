@@ -65,9 +65,9 @@ const techStacks = [
 
 const certificateCards = [
   {
-    title: "Machine Learning Specialization",
+    title: "Python for Data Science, AI & Development",
     org: "Coursera",
-    year: "2024",
+    year: "2026",
     icon: GraduationCap,
     accent: "from-blue-500/20 via-purple-500/20 to-pink-500/20",
   },
@@ -127,19 +127,19 @@ const projectsData = [
   },
   {
     id: "p3",
-    Title: "Financial Fraud Detection (XGBoost)",
-    Description: "ML pipeline to flag fraudulent transactions using engineered features.",
+    Title: "Cross-Language Meme & Slang Translator",
+    Description: "An NLP project that translates internet memes, slang, and code-mixed text (English + Hinglish) into clear, standard language. Built using Transformers (mBART/MarianMT) with a custom slang dataset.",
     Img: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1200&auto=format&fit=crop",
-    TechStack: ["Python", "scikit-learn", "XGBoost", "Pandas"],
-    Link: "https://github.com/neeraj-ml/fraud-detection-xgboost"
+    TechStack: ["NLP", "scikit-learn", "Transformers", "Machine Learning" , "PyTorch","Hugging Face "],
+    Link: "https://github.com/neeraj214/cross-language-meme-slang-translator"
   },
   {
     id: "p4",
-    Title: "YOLOv8 Object Detection",
-    Description: "Custom-trained YOLOv8 model with a Streamlit UI for quick demos.",
+    Title: "3D-Object-Reconstruction-from-2D-Images",
+    Description: "A single-image 3D reconstruction system built using deep learning techniques. The model predicts depth information from 2D RGB images and converts it into a 3D point cloud. Efficient preprocessing and feature extraction improve reconstruction quality.",
     Img: "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?q=80&w=1200&auto=format&fit=crop",
-    TechStack: ["Python", "PyTorch", "YOLOv8", "OpenCV", "Streamlit"],
-    Link: "https://github.com/neeraj-ml/yolov8-object-detection"
+    TechStack: ["Python", "PyTorch", "Point Cloud Processing", "Pix3D", "Transformer-based decoders"],
+    Link: "https://github.com/neeraj214/3D-Object-Reconstruction-from-2D-Images"
   },
   {
     id: "p5",
@@ -336,6 +336,16 @@ export default function FullWidthTabs() {
                           </h3>
                           <p className="text-slate-400 text-sm mt-1">{card.org}</p>
                         </div>
+                        {index === 0 && (
+                          <div className="mt-4">
+                            <img
+                              src={imgCert}
+                              alt={`${card.title} certificate`}
+                              className="w-full h-auto rounded-xl border border-white/10 object-cover"
+                              loading="lazy"
+                            />
+                          </div>
+                        )}
                         <div className="mt-auto">
                           <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
                           <div className="mt-4 flex items-center gap-2 text-xs text-slate-400">
