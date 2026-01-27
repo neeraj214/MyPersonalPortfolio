@@ -356,7 +356,7 @@ export default function FullWidthTabs() {
                     key={index}
                     role="listitem"
                     aria-label={stack.language}
-                    className="rounded-xl bg-white/5 border border-white/10 p-5 flex flex-col items-center justify-center min-h-[180px] md:min_h-[200px] hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
+                    className="rounded-xl bg-white/5 border border-white/10 p-5 flex flex-col items-center justify-center min-h-[180px] md:min-h-[200px] hover:bg-white/10 transition-all duration-300 hover:shadow-xl"
                   >
                     <div className="w-20 h-20 md:w-24 md:h-24">
                       <img
