@@ -70,13 +70,13 @@ const certificateCards = [
     year: "2026",
     icon: GraduationCap,
     accent: "from-blue-500/20 via-purple-500/20 to-pink-500/20",
+    ImgSertif: imgCert,
   },
   {
     title: "McKinsey.org Forward Program",
     org: "McKinsey",
     year: "2025",
-    icon: GraduationCap
-    ,
+    icon: Cloud,
     accent: "from-cyan-500/20 via-blue-500/20 to-purple-500/20",
   },
   {
@@ -337,12 +337,12 @@ export default function FullWidthTabs() {
                           </h3>
                           <p className="text-slate-400 text-sm mt-1">{card.org}</p>
                         </div>
-                        {index === 0 && (
+                        {card.ImgSertif && (
                           <div className="mt-4">
                             <img
-                              src={imgCert}
+                              src={card.ImgSertif}
                               alt={`${card.title} certificate`}
-                              className="w-full h-auto rounded-xl border border-white/10 object-cover"
+                              className="w-full h-auto rounded-xl border border-white/10 object-contain max-h-60"
                               loading="lazy"
                             />
                           </div>
@@ -358,11 +358,6 @@ export default function FullWidthTabs() {
                     </div>
                   );
                 })}
-              </div>
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {[imgCert, ...(JSON.parse(localStorage.getItem("certificates") || "[]").map((c) => c.ImgSertif) || [])].map((src, i) => (
-                  <Certificate key={i} ImgSertif={src} />
-                ))}
               </div>
             </div>
           </TabPanel>
