@@ -75,7 +75,7 @@ const certificateCards = [
     title: "McKinsey.org Forward Program",
     org: "McKinsey",
     year: "2025",
-    icon: Cloud,
+    icon: GraduationCap,
     accent: "from-cyan-500/20 via-blue-500/20 to-purple-500/20",
   },
   {
