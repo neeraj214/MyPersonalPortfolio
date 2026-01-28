@@ -75,7 +75,8 @@ const certificateCards = [
     title: "McKinsey.org Forward Program",
     org: "McKinsey",
     year: "2025",
-    icon: GraduationCap,
+    icon: GraduationCap
+    ,
     accent: "from-cyan-500/20 via-blue-500/20 to-purple-500/20",
   },
   {
@@ -113,7 +114,7 @@ const projectsData = [
     id: "p1",
     Title: "Real-time Emotion Detection (CNN)",
     Description: "Detects facial emotions in live video using CNN with optimized inference.",
-    Img: imgCert,
+    Img: "/Photo1.png",
     TechStack: ["Python", "TensorFlow", "OpenCV", "Streamlit"],
     Link: "https://github.com/neeraj-ml/emotion-detection-cnn"
   },
