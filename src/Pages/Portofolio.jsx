@@ -337,11 +337,11 @@ export default function FullWidthTabs() {
                           <p className="text-slate-400 text-sm mt-1">{card.org}</p>
                         </div>
                         {card.ImgSertif && (
-                          <div className="mt-4">
+                          <div className="mt-4 flex-none">
                             <img
                               src={card.ImgSertif}
                               alt={`${card.title} certificate`}
-                              className="w-full h-auto rounded-xl border border-white/10 object-contain max-h-60"
+                              className="w-full h-auto rounded-xl border border-white/10 object-contain max-h-44 md:max-h-60"
                               loading="lazy"
                             />
                           </div>
