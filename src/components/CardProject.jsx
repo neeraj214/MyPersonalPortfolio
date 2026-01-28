@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { ExternalLink, ArrowRight } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
-const CardProject = ({ Img, Video, Title, Description, TechStack = [], Link: ProjectLink, id }) => {
+const CardProject = ({ Img, Video, Title, Description, TechStack = [], Link: ProjectLink }) => {
   const [imgError, setImgError] = useState(false);
   const handleLiveDemo = (e) => {
     if (!ProjectLink) {
@@ -11,14 +10,6 @@ const CardProject = ({ Img, Video, Title, Description, TechStack = [], Link: Pro
       alert("Live demo link is not available");
     }
   };
-  
-  const handleDetails = (e) => {
-    if (!id) {
-      e.preventDefault();
-      alert("Project details are not available");
-    }
-  };
-  
 
   return (
     <div className="group relative w-full h-full">
@@ -81,7 +72,7 @@ const CardProject = ({ Img, Video, Title, Description, TechStack = [], Link: Pro
               </div>
             )}
             
-            <div className="pt-4 flex items-center justify-between">
+            <div className="pt-4 flex items-center justify-start">
               {ProjectLink ? (
                 <a
                 href={ProjectLink || "#"}
@@ -95,21 +86,6 @@ const CardProject = ({ Img, Video, Title, Description, TechStack = [], Link: Pro
                 </a>
               ) : (
                 <span className="text-gray-500 text-sm">URL Not Available</span>
-              )}
-              
-     
-
-              {id ? (
-                <Link
-                  to={`/project/${id}`}
-                  onClick={handleDetails}
-                  className="inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/90 transition-all duration-200 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-purple-500/50"
-                >
-                  <span className="text-sm font-medium">Details</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              ) : (
-                <span className="text-gray-500 text-sm">Details Not Available</span>
               )}
             </div>
           </div>
@@ -127,7 +103,6 @@ CardProject.propTypes = {
   Description: PropTypes.string.isRequired,
   TechStack: PropTypes.arrayOf(PropTypes.string),
   Link: PropTypes.string,
-  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 export default CardProject;
