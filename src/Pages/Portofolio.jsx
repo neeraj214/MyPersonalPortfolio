@@ -72,8 +72,8 @@ const certificateCards = [
     accent: "from-blue-500/20 via-purple-500/20 to-pink-500/20",
   },
   {
-    title: "AWS Certified Cloud Practitioner",
-    org: "AWS",
+    title: "McKinsey.org Forward Program",
+    org: "McKinsey",
     year: "2025",
     icon: Cloud,
     accent: "from-cyan-500/20 via-blue-500/20 to-purple-500/20",
@@ -113,7 +113,7 @@ const projectsData = [
     id: "p1",
     Title: "Real-time Emotion Detection (CNN)",
     Description: "Detects facial emotions in live video using CNN with optimized inference.",
-    Img: "https://images.unsplash.com/photo-1526378722444-4a1121188589?q=80&w=1200&auto=format&fit=crop",
+    Img: imgCert,
     TechStack: ["Python", "TensorFlow", "OpenCV", "Streamlit"],
     Link: "https://github.com/neeraj-ml/emotion-detection-cnn"
   },
