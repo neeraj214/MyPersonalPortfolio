@@ -113,7 +113,7 @@ const projectsData = [
     id: "p1",
     Title: "Real-time Emotion Detection (CNN)",
     Description: "Detects facial emotions in live video using CNN with optimized inference.",
-    Img: "/Photo1.png",
+    Img: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["Python", "TensorFlow", "OpenCV", "Streamlit"],
     Link: "https://github.com/neeraj-ml/emotion-detection-cnn"
   },
@@ -121,7 +121,7 @@ const projectsData = [
     id: "p2",
     Title: "Transformer-based Text Summarization API",
     Description: "Abstractive summarization service built with BART/PEGASUS and FastAPI.",
-    Img: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop",
+    Img: "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["Python", "Transformers", "NLP", "FastAPI", "Docker"],
     Link: "https://github.com/neeraj-ml/text-summarization-api"
   },
@@ -129,7 +129,7 @@ const projectsData = [
     id: "p3",
     Title: "Cross-Language Meme & Slang Translator",
     Description: "An NLP project that translates internet memes, slang, and code-mixed text (English + Hinglish) into clear, standard language. Built using Transformers (mBART/MarianMT) with a custom slang dataset.",
-    Img: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1200&auto=format&fit=crop",
+    Img: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["NLP", "scikit-learn", "Transformers", "Machine Learning" , "PyTorch","Hugging Face "],
     Link: "https://github.com/neeraj214/cross-language-meme-slang-translator"
   },
@@ -137,7 +137,7 @@ const projectsData = [
     id: "p4",
     Title: "3D-Object-Reconstruction-from-2D-Images",
     Description: "A single-image 3D reconstruction system built using deep learning techniques. The model predicts depth information from 2D RGB images and converts it into a 3D point cloud. Efficient preprocessing and feature extraction improve reconstruction quality.",
-    Img: "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?q=80&w=1200&auto=format&fit=crop",
+    Img: "https://images.unsplash.com/photo-1633419461186-7d7507647261?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["Python", "PyTorch", "Point Cloud Processing", "Pix3D", "Transformer-based decoders"],
     Link: "https://github.com/neeraj214/3D-Object-Reconstruction-from-2D-Images"
   },
@@ -145,7 +145,7 @@ const projectsData = [
     id: "p5",
     Title: "Voice-Controlled OS Shell",
     Description: "A Python-based voice-controlled shell that lets users execute filesystem and system commands using natural language speech or text, with a secure sandbox, optional Tkinter GUI, TTS feedback, and detailed command logging",
-    Img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop",
+    Img: "https://images.unsplash.com/photo-1589254065878-42c9da9e2f58?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["Python", "Text-to-Speech (TTS)", "Sandbox", "OpenAITkinter (GUI)", "PyAudio"],
     Link: "https://github.com/neeraj214/Voice-Controlled-OS-Shell"
   },
@@ -153,7 +153,7 @@ const projectsData = [
     id: "p6",
     Title: "MLOps: CI/CD Model Deployment",
     Description: "Automated deployment pipeline with GitHub Actions and Vercel.",
-    Img: "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop",
+    Img: "https://images.unsplash.com/photo-1667372393119-c81c0cda0a29?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["React", "FastAPI", "Docker", "Vercel", "GitHub Actions"],
     Link: "https://github.com/neeraj-ml/mlops-cicd-deployment"
   }
