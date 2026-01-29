@@ -113,7 +113,7 @@ const projectsData = [
     id: "p1",
     Title: "Real-time Emotion Detection (CNN)",
     Description: "Detects facial emotions in live video using CNN with optimized inference.",
-    Img: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?q=80&w=1200&auto=format&fit=crop",
+    Img: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["Python", "TensorFlow", "OpenCV", "Streamlit"],
     Link: "https://github.com/neeraj-ml/emotion-detection-cnn"
   },
