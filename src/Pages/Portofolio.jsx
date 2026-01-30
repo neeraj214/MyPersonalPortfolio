@@ -113,7 +113,7 @@ const projectsData = [
     id: "p1",
     Title: "Real-time Emotion Detection (CNN)",
     Description: "Detects facial emotions in live video using CNN with optimized inference.",
-    Img: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=1200&auto=format&fit=crop",
+    Img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["Python", "TensorFlow", "OpenCV", "Streamlit"],
     Link: "https://github.com/neeraj-ml/emotion-detection-cnn"
   },
@@ -121,7 +121,7 @@ const projectsData = [
     id: "p2",
     Title: "Transformer-based Text Summarization API",
     Description: "Abstractive summarization service built with BART/PEGASUS and FastAPI.",
-    Img: "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=1200&auto=format&fit=crop",
+    Img: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["Python", "Transformers", "NLP", "FastAPI", "Docker"],
     Link: "https://github.com/neeraj-ml/text-summarization-api"
   },
@@ -129,7 +129,7 @@ const projectsData = [
     id: "p3",
     Title: "Cross-Language Meme & Slang Translator",
     Description: "An NLP project that translates internet memes, slang, and code-mixed text (English + Hinglish) into clear, standard language. Built using Transformers (mBART/MarianMT) with a custom slang dataset.",
-    Img: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop",
+    Img: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["NLP", "scikit-learn", "Transformers", "Machine Learning" , "PyTorch","Hugging Face "],
     Link: "https://github.com/neeraj214/cross-language-meme-slang-translator"
   },
@@ -137,7 +137,7 @@ const projectsData = [
     id: "p4",
     Title: "3D-Object-Reconstruction-from-2D-Images",
     Description: "A single-image 3D reconstruction system built using deep learning techniques. The model predicts depth information from 2D RGB images and converts it into a 3D point cloud. Efficient preprocessing and feature extraction improve reconstruction quality.",
-    Img: "https://images.unsplash.com/photo-1633419461186-7d7507647261?q=80&w=1200&auto=format&fit=crop",
+    Img: "https://images.unsplash.com/photo-1506097425191-7ad538b29cef?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["Python", "PyTorch", "Point Cloud Processing", "Pix3D", "Transformer-based decoders"],
     Link: "https://github.com/neeraj214/3D-Object-Reconstruction-from-2D-Images"
   },
@@ -153,7 +153,7 @@ const projectsData = [
     id: "p6",
     Title: "MLOps: CI/CD Model Deployment",
     Description: "Automated deployment pipeline with GitHub Actions and Vercel.",
-    Img: "https://images.unsplash.com/photo-1667372393119-c81c0cda0a29?q=80&w=1200&auto=format&fit=crop",
+    Img: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["React", "FastAPI", "Docker", "Vercel", "GitHub Actions"],
     Link: "https://github.com/neeraj-ml/mlops-cicd-deployment"
   }
