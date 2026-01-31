@@ -128,7 +128,7 @@ const projectsData = [
   {
     id: "p3",
     Title: "Cross-Language Meme & Slang Translator",
-    Description: "An NLP project that translates internet memes, slang, and code-mixed text (English + Hinglish) into clear, standard language. Built using Transformers (mBART/MarianMT) with a custom slang dataset.",
+    Description: "An NLP project that translates internet memes, slang, and code-mixed text (English + Hinglish) into clear, standard language.",
     Img: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["NLP", "scikit-learn", "Transformers", "Machine Learning" , "PyTorch","Hugging Face "],
     Link: "https://github.com/neeraj214/cross-language-meme-slang-translator"
@@ -136,7 +136,7 @@ const projectsData = [
   {
     id: "p4",
     Title: "3D-Object-Reconstruction-from-2D-Images",
-    Description: "A single-image 3D reconstruction system built using deep learning techniques. The model predicts depth information from 2D RGB images and converts it into a 3D point cloud. Efficient preprocessing and feature extraction improve reconstruction quality.",
+    Description: "A single-image 3D reconstruction system built using deep learning techniques.",
     Img: "https://images.unsplash.com/photo-1506097425191-7ad538b29cef?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["Python", "PyTorch", "Point Cloud Processing", "Pix3D", "Transformer-based decoders"],
     Link: "https://github.com/neeraj214/3D-Object-Reconstruction-from-2D-Images"
@@ -144,18 +144,18 @@ const projectsData = [
   {
     id: "p5",
     Title: "Voice-Controlled OS Shell",
-    Description: "A Python-based voice-controlled shell that lets users execute filesystem and system commands using natural language speech or text, with a secure sandbox, optional Tkinter GUI, TTS feedback, and detailed command logging",
+    Description: "A Python-based voice-controlled shell that lets users execute filesystem and system commands.",
     Img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["Python", "Text-to-Speech (TTS)", "Sandbox", "OpenAITkinter (GUI)", "PyAudio"],
     Link: "https://github.com/neeraj214/Voice-Controlled-OS-Shell"
   },
   {
     id: "p6",
-    Title: "MLOps: CI/CD Model Deployment",
-    Description: "Automated deployment pipeline with GitHub Actions and Vercel.",
-    Img: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1200&auto=format&fit=crop",
-    TechStack: ["React", "FastAPI", "Docker", "Vercel", "GitHub Actions"],
-    Link: "https://github.com/neeraj-ml/mlops-cicd-deployment"
+    Title: "AI-powered chatbot",
+    Description: "A Python & Flask–based intelligent chatbot using NLP and machine learning.",
+    Img: "http://192.168.31.209:5000/static/images/UNIBOT.png",
+    TechStack: ["Python", "FastAPI", "TensorFlow", "NLTK / SpaCy","SQLite", "GitHub Actions"],
+    Link: "https://github.com/neeraj214/chatbot-UniBot"
   }
 ];
 
