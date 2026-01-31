@@ -145,7 +145,7 @@ const projectsData = [
     id: "p5",
     Title: "Voice-Controlled OS Shell",
     Description: "A Python-based voice-controlled shell that lets users execute filesystem and system commands using natural language speech or text, with a secure sandbox, optional Tkinter GUI, TTS feedback, and detailed command logging",
-    Img: "https://images.unsplash.com/photo-1589254065878-42c9da9e2f58?q=80&w=1200&auto=format&fit=crop",
+    Img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["Python", "Text-to-Speech (TTS)", "Sandbox", "OpenAITkinter (GUI)", "PyAudio"],
     Link: "https://github.com/neeraj214/Voice-Controlled-OS-Shell"
   },
