@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Boxes, Layers, Award, GraduationCap, Brain, Cloud, ShieldCheck, BarChart3, Server } from "lucide-react";
 import imgCert from "../../image.png";
+import imgMcKinsey from "../assets/McKinsey.png";
 
 function TabPanel({ children, value, index, ...other }) {
   return (
@@ -77,6 +78,7 @@ const certificateCards = [
     year: "2025",
     icon: Cloud,
     accent: "from-cyan-500/20 via-blue-500/20 to-purple-500/20",
+    ImgSertif: imgMcKinsey,
   },
   {
     title: "Microsoft Azure Fundamentals (AZ-900)",
