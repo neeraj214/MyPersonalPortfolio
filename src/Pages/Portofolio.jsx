@@ -320,7 +320,7 @@ export default function FullWidthTabs() {
                   return (
                     <div
                       key={index}
-                      className="group relative aspect-square rounded-2xl bg-white/[0.04] border border-white/10 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-white/20"
+                      className="group relative min-h-[300px] rounded-2xl bg-white/[0.04] border border-white/10 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-white/20"
                       data-aos="fade-up"
                       data-aos-duration={900 + index * 50}
                     >
