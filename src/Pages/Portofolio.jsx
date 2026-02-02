@@ -81,9 +81,9 @@ const certificateCards = [
     ImgSertif: imgMcKinsey,
   },
   {
-    title: "Microsoft Azure Fundamentals (AZ-900)",
-    org: "Microsoft",
-    year: "2024",
+    title: "Natural Language Processing with Attention Models",
+    org: "Coursera & DeepLearning.AI",
+    year: "2026",
     icon: Server,
     accent: "from-indigo-500/20 via-blue-500/20 to-purple-500/20",
   },
