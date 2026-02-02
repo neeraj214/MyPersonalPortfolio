@@ -13,6 +13,7 @@ import "aos/dist/aos.css";
 import { Boxes, Layers, Award, GraduationCap, Brain, Cloud, ShieldCheck, BarChart3, Server } from "lucide-react";
 import imgCert from "../../image.png";
 import imgMcKinsey from "../assets/McKinsey.png";
+import imgNLP from "../assets/NLP_Attention.png";
 
 function TabPanel({ children, value, index, ...other }) {
   return (
@@ -86,6 +87,7 @@ const certificateCards = [
     year: "2026",
     icon: Server,
     accent: "from-indigo-500/20 via-blue-500/20 to-purple-500/20",
+    ImgSertif: imgNLP,
   },
   {
     title: "Google Data Analytics Professional",
