@@ -15,6 +15,7 @@ import imgCert from "../../image.png";
 import imgMcKinsey from "../assets/McKinsey.png";
 import imgNLP from "../assets/NLP_Attention.png";
 import imgSQL from "../assets/SQL_Certificate.png";
+import imgDeepRoute from "../assets/DeepRoute_OCR.png";
 
 function TabPanel({ children, value, index, ...other }) {
   return (
@@ -125,11 +126,11 @@ const projectsData = [
   },
   {
     id: "p2",
-    Title: "Transformer-based Text Summarization API",
-    Description: "Abstractive summarization service built with BART/PEGASUS and FastAPI.",
-    Img: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1200&auto=format&fit=crop",
-    TechStack: ["Python", "Transformers", "NLP", "FastAPI", "Docker"],
-    Link: "https://github.com/neeraj-ml/text-summarization-api"
+    Title: "DeepRoute: Transformer-based OCR System",
+    Description: "Multi-stage Transformer OCR pipeline with CNN classification and automated validation.",
+    Img: imgDeepRoute,
+    TechStack: ["Python", "TrOCR", "CNN", "FastAPI", "OpenCV", "Docker"],
+    Link: "https://github.com/neeraj214/DeepRoute-OCR"
   },
   {
     id: "p3",
