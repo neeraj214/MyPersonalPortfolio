@@ -90,9 +90,9 @@ const certificateCards = [
     ImgSertif: imgNLP,
   },
   {
-    title: "Google Data Analytics Professional",
-    org: "Google",
-    year: "2025",
+    title: "SQL For Data Science",
+    org: "Coursera & UCDAVIS",
+    year: "2026",
     icon: BarChart3,
     accent: "from-teal-500/20 via-blue-500/20 to-purple-500/20",
   },
