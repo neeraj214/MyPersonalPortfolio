@@ -16,6 +16,7 @@ import imgMcKinsey from "../assets/McKinsey.png";
 import imgNLP from "../assets/NLP_Attention.png";
 import imgSQL from "../assets/SQL_Certificate.png";
 import imgDeepRoute from "../assets/DeepRoute_OCR.png";
+import imgUniBot from "../assets/UniBot_Logo.png";
 
 function TabPanel({ children, value, index, ...other }) {
   return (
@@ -160,7 +161,7 @@ const projectsData = [
     id: "p6",
     Title: "AI-powered chatbot",
     Description: "A Python & Flask–based intelligent chatbot using NLP and machine learning.",
-    Img: "http://192.168.31.209:5000/static/images/UNIBOT.png",
+    Img: imgUniBot,
     TechStack: ["Python", "FastAPI", "TensorFlow", "NLTK / SpaCy","SQLite", "GitHub Actions"],
     Link: "https://github.com/neeraj214/chatbot-UniBot"
   }
