@@ -322,7 +322,7 @@ export default function FullWidthTabs() {
                   return (
                     <div
                       key={index}
-                      className="group relative min-h-[300px] rounded-2xl bg-white/[0.04] border border-white/10 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-white/20"
+                      className="group relative min-h-[420px] rounded-2xl bg-white/[0.04] border border-white/10 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-white/20"
                       data-aos="fade-up"
                       data-aos-duration={900 + index * 50}
                     >
@@ -343,11 +343,11 @@ export default function FullWidthTabs() {
                           <p className="text-slate-400 text-sm mt-1">{card.org}</p>
                         </div>
                         {card.ImgSertif && (
-                          <div className="mt-4 flex-none">
+                          <div className="mt-4 flex-none h-40 md:h-48 w-full flex items-center justify-center bg-white/5 rounded-xl overflow-hidden border border-white/10 group-hover:border-white/20 transition-all duration-300 p-2">
                             <img
                               src={card.ImgSertif}
                               alt={`${card.title} certificate`}
-                              className="w-full h-auto rounded-xl border border-white/10 object-contain max-h-44 md:max-h-60"
+                              className="w-full h-full object-contain transform group-hover:scale-[1.02] transition-transform duration-500"
                               loading="lazy"
                             />
                           </div>
