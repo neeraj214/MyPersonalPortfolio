@@ -14,6 +14,7 @@ import { Boxes, Layers, Award, GraduationCap, Brain, Cloud, ShieldCheck, BarChar
 import imgCert from "../../image.png";
 import imgMcKinsey from "../assets/McKinsey.png";
 import imgNLP from "../assets/NLP_Attention.png";
+import imgSQL from "../assets/SQL_Certificate.png";
 
 function TabPanel({ children, value, index, ...other }) {
   return (
@@ -95,6 +96,7 @@ const certificateCards = [
     year: "2026",
     icon: BarChart3,
     accent: "from-teal-500/20 via-blue-500/20 to-purple-500/20",
+    ImgSertif: imgSQL,
   },
   {
     title: "Advanced NLP with Transformers",
