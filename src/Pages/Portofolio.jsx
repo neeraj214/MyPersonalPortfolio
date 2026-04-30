@@ -122,6 +122,14 @@ const certificateCards = [
 const projectsData = [
   {
     id: "p1",
+    Title: "Automated Road Damage Detection",
+    Description: "Detects facial emotions in live video using CNN with optimized inference.",
+    Img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop",
+    TechStack: ["Python", "TensorFlow", "OpenCV", "Streamlit"],
+    Link: "https://github.com/neeraj214/-Real-Time-Emotion-Detection-CNN-"
+  },
+  {
+    id: "p1",
     Title: "Real-time Emotion Detection (CNN)",
     Description: "Detects facial emotions in live video using CNN with optimized inference.",
     Img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop",
