@@ -20,7 +20,8 @@ import imgUniBot from "../assets/Screenshot 2026-02-27 212349.png";
 import imgEDeepLearning from "../assets/image.png";
 import imgCourseraML from "../assets/Coursera ML.png";
 import imgAQI from "../assets/AQI.png";
-import imgPlant from "../assets/plant.png";   
+import imgPlant from "../assets/plant.png";  
+import porthole from "../assets/porthole.png";
 
 function TabPanel({ children, value, index, ...other }) {
   return (
@@ -127,7 +128,7 @@ const projectsData = [
     id: "p1",
     Title: "Automated Road Damage Detection",
     Description: "An enterprise-grade deep learning solution for automated road infrastructure monitoring.",
-    Img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop",
+    Img: porthole,
     TechStack: ["Python", "TensorFlow", "OpenCV", "MobileNetV2", "scikit-learn", "Git"],
     Link: "https://github.com/neeraj214/-Road-Pothole-Damage-Detection-System-CNN--RNN-Based-"
   },
