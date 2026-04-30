@@ -19,6 +19,9 @@ import imgDeepRoute from "../assets/Screenshot 2026-02-27 212744.png";
 import imgUniBot from "../assets/Screenshot 2026-02-27 212349.png";
 import imgEDeepLearning from "../assets/image.png";
 import imgCourseraML from "../assets/Coursera ML.png";
+import imgAQI from "../assets/AQI.png";
+import imgPlant from "../assets/plant.png";   
+
 function TabPanel({ children, value, index, ...other }) {
   return (
     <div
@@ -180,7 +183,7 @@ const projectsData = [
     id: "p8",
     Title: "Plant AI: Leaf Disease Classifier",
     Description: "🌱 Plant AI is a machine learning-based web application that detects and classifies plant diseases from leaf images.",
-    Img: imgUniBot,
+    Img: imgPlant,
     TechStack: ["Python", "FastAPI", "TensorFlow", "CNN","Streamlit", "GitHub Actions"],
     Link: "https://github.com/neeraj214/Plant-AI-"
   },
@@ -188,7 +191,7 @@ const projectsData = [
     id: "p9",
     Title: "AQI Analysis & Prediction",
     Description: "About-to-end pipeline for analyzing and predicting Air Quality Index (AQI) levels. ",
-    Img: imgUniBot,
+    Img: imgAQI,
     TechStack: ["Python", "FastAPI", "Scikit-learn", "Docker","Pandas&NumPy", "Hugging Face"],
     Link: "https://github.com/neeraj214/Air-Quality-Index-Analysis"
   }
