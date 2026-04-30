@@ -126,7 +126,7 @@ const projectsData = [
     Description: "An enterprise-grade deep learning solution for automated road infrastructure monitoring.",
     Img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop",
     TechStack: ["Python", "TensorFlow", "OpenCV", "MobileNetV2", "scikit-learn", "Git"],
-    Link: "https://github.com/neeraj214/-Real-Time-Emotion-Detection-CNN-"
+    Link: "https://github.com/neeraj214/-Road-Pothole-Damage-Detection-System-CNN--RNN-Based-"
   },
   {
     id: "p1",
