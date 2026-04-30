@@ -129,7 +129,7 @@ const projectsData = [
     Link: "https://github.com/neeraj214/-Road-Pothole-Damage-Detection-System-CNN--RNN-Based-"
   },
   {
-    id: "p1",
+    id: "p2",
     Title: "Real-time Emotion Detection (CNN)",
     Description: "Detects facial emotions in live video using CNN with optimized inference.",
     Img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop",
@@ -137,7 +137,7 @@ const projectsData = [
     Link: "https://github.com/neeraj214/-Real-Time-Emotion-Detection-CNN-"
   },
   {
-    id: "p2",
+    id: "p3",
     Title: "DeepRoute: Transformer-based OCR System",
     Description: "Multi-stage Transformer OCR pipeline with CNN classification and automated validation.",
     Img: imgDeepRoute,
@@ -145,7 +145,7 @@ const projectsData = [
     Link: "https://github.com/neeraj214/DeepRoute-OCR"
   },
   {
-    id: "p3",
+    id: "p4",
     Title: "Cross-Language Meme & Slang Translator",
     Description: "An NLP project that translates internet memes, slang, and code-mixed text (English + Hinglish) into clear, standard language.",
     Img: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1200&auto=format&fit=crop",
@@ -153,7 +153,7 @@ const projectsData = [
     Link: "https://github.com/neeraj214/cross-language-meme-slang-translator"
   },
   {
-    id: "p4",
+    id: "p5",
     Title: "3D-Object-Reconstruction-from-2D-Images",
     Description: "A single-image 3D reconstruction system built using deep learning techniques.",
     Img: "https://images.unsplash.com/photo-1506097425191-7ad538b29cef?q=80&w=1200&auto=format&fit=crop",
@@ -161,7 +161,7 @@ const projectsData = [
     Link: "https://github.com/neeraj214/3D-Object-Reconstruction-from-2D-Images"
   },
   {
-    id: "p5",
+    id: "p6",
     Title: "Voice-Controlled OS Shell",
     Description: "A Python-based voice-controlled shell that lets users execute filesystem and system commands.",
     Img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
@@ -169,7 +169,23 @@ const projectsData = [
     Link: "https://github.com/neeraj214/Voice-Controlled-OS-Shell"
   },
   {
-    id: "p6",
+    id: "p7",
+    Title: "AI-powered chatbot",
+    Description: "A Python & Flask–based intelligent chatbot using NLP and machine learning.",
+    Img: imgUniBot,
+    TechStack: ["Python", "FastAPI", "TensorFlow", "NLTK / SpaCy","SQLite", "GitHub Actions"],
+    Link: "https://github.com/neeraj214/chatbot-UniBot"
+  },
+  {
+    id: "p8",
+    Title: "AI-powered chatbot",
+    Description: "A Python & Flask–based intelligent chatbot using NLP and machine learning.",
+    Img: imgUniBot,
+    TechStack: ["Python", "FastAPI", "TensorFlow", "NLTK / SpaCy","SQLite", "GitHub Actions"],
+    Link: "https://github.com/neeraj214/chatbot-UniBot"
+  },
+  {
+    id: "p9",
     Title: "AI-powered chatbot",
     Description: "A Python & Flask–based intelligent chatbot using NLP and machine learning.",
     Img: imgUniBot,
