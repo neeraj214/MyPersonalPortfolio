@@ -186,11 +186,11 @@ const projectsData = [
   },
   {
     id: "p9",
-    Title: "AI-powered chatbot",
-    Description: "A Python & Flask–based intelligent chatbot using NLP and machine learning.",
+    Title: "AQI Analysis & Prediction",
+    Description: "About-to-end pipeline for analyzing and predicting Air Quality Index (AQI) levels. ",
     Img: imgUniBot,
-    TechStack: ["Python", "FastAPI", "TensorFlow", "NLTK / SpaCy","SQLite", "GitHub Actions"],
-    Link: "https://github.com/neeraj214/chatbot-UniBot"
+    TechStack: ["Python", "FastAPI", "Scikit-learn", "Docker","Pandas&NumPy", "Hugging Face"],
+    Link: "https://github.com/neeraj214/Air-Quality-Index-Analysis"
   }
 ];
 
