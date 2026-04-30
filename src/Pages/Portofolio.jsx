@@ -181,8 +181,8 @@ const projectsData = [
     Title: "Plant AI: Leaf Disease Classifier",
     Description: "🌱 Plant AI is a machine learning-based web application that detects and classifies plant diseases from leaf images.",
     Img: imgUniBot,
-    TechStack: ["Python", "FastAPI", "TensorFlow", "NLTK / SpaCy","SQLite", "GitHub Actions"],
-    Link: "https://github.com/neeraj214/chatbot-UniBot"
+    TechStack: ["Python", "FastAPI", "TensorFlow", "CNN","Streamlit", "GitHub Actions"],
+    Link: "https://github.com/neeraj214/Plant-AI-"
   },
   {
     id: "p9",
