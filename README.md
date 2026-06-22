@@ -157,3 +157,11 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## 📜 License
 Copyright © 2025 Neeraj Negi. All rights reserved.
+
+---
+
+## 🚫 Why This Project Is Not Deployed Online
+
+- **Firebase Database Configuration**: The portfolio relies on local Firebase configuration rules and keys which are set up for local development and verification.
+- **In Development**: Currently configured for localhost preview; deployment steps to Vercel/Netlify are tracked under the project roadmap.
+
